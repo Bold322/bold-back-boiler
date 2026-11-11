@@ -138,6 +138,7 @@ func main() {
 		cfg.Tenants.DeleteGraceHours,
 		cfg.FrontendBaseURL,
 	)
+	superH.SetEmailDelivery(cfg.Email.Delivery)
 	inviteH := invites.NewHandler(inviteSvc, cfg.Invites.TTLHours, cfg.FrontendBaseURL)
 	acceptH := invites.NewAcceptHandler(inviteSvc, authSvc)
 	rateLimit := middleware.NewRateLimit(10, time.Minute)

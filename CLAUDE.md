@@ -63,7 +63,7 @@ cmd/server/main.go
 - **superadmin** (`RequireJWT + RequireSuperadmin`, NOT `RequireActiveTenant`):
   `/superadmin/tenants`, `/superadmin/tenants/:id/users|invites`,
   `/superadmin/plans`, `/superadmin/announcements`, `/superadmin/stats`,
-  `/superadmin/audit`, `/superadmin/internal-users`.
+  `/superadmin/audit`, `/superadmin/internal-users`, `/superadmin/system/health`.
 
 ### Multi-tenancy
 

@@ -18,6 +18,7 @@ type Handler struct {
 	inviteTTLHrs  int
 	publicBaseURL string
 	restoreGrace  int
+	emailDelivery string
 }
 
 func NewHandler(svc *Service, inviteTTLHours, restoreGraceHours int, publicBaseURL string) *Handler {

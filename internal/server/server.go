@@ -193,6 +193,7 @@ func New(cfg *config.Config, pool *pgxpool.Pool, d Deps) *Server {
 	superGroup.PATCH("/plans/:id", superH.UpdatePlan)
 	superGroup.GET("/audit", superH.ListSuperAudit)
 	superGroup.GET("/stats", superH.GetPlatformStats)
+	superGroup.GET("/system/health", superH.GetSystemHealth)
 	superGroup.GET("/internal-users", superH.ListInternalUsers)
 	superGroup.PATCH("/tenants/:id", superH.PatchTenant)
 	superGroup.GET("/tenants/:id/users", superH.ListUsersInTenant)
