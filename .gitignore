@@ -1,0 +1,27 @@
+# Go build artifacts
+bin/
+/server
+dist/
+*.test
+*.out
+*.exe
+go.work
+go.work.sum
+
+# Coverage
+coverage.txt
+coverage.html
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
